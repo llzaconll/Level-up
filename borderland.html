@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        borderland
+    </title>
+</head>
+<style type="text/css">
+    * {
+        font-family: sans-serif;
+    }
+    
+
+    #r1 {
+        background-color: #474747;
+        height: 90px;
+        width: 98%;
+        padding-top: 20px;
+        padding-left: 2%;
+        border-radius: 2%;
+        /* margin-bottom: 10px; */
+    }
+
+    #r4 {
+        height: 600px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        /* background-color: yellow; */
+    }
+
+    #r4c1 {
+        height: 580px;
+        width: 27%;
+        /* margin-right: 2%; */
+        border-radius: 3%;
+        background-color: #F7CA18;
+        position: fixed;
+        /* opacity: 50%; */
+        /* padding-bottom: 20px\*/
+        /* padding-top: 100px; */
+    }
+
+    #side {
+        height: 1580px;
+        width: 26%;
+        margin-right: 1%;
+        border-radius: 3%;
+        background-color: #000000;
+        margin-left: 2%;
+    }
+
+    #r4c2 video {
+        border-radius: 2%;
+        /* width: 60%; */
+    }
+
+    #r4 div {
+        /* background-color: rgb(59, 59, 59); */
+        float: left;
+        /* height: 570px; */
+        /* padding-top: 300px; */
+        text-align: center;
+    }
+
+    /* 
+    #r4 img {
+        border-radius: 5%;
+        margin-right: 10px;
+    } */
+
+
+
+    #r3 {
+        background-color: rgb(22, 22, 22);
+        height: 900px;
+        width: 80%;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 18%;
+        padding-left: 35px;
+        color: white;
+        /* border-radius: 5%; */
+        text-align: center;
+        /* margin-top: 200px; */
+    }
+
+    /* #r3 h2 { */
+    /* text-align: left; */
+    /* } */
+
+    #r3 {
+        text-align: left;
+    }
+
+    #r3 h4 {
+        color: rgb(177, 177, 177);
+        opacity: 70%;
+    }
+
+    #r4c1b1 img {
+        height: 220px;
+        width: 63%;
+        padding: 25px;
+    }
+
+    #r4c1b2 {
+        /* background-color: red; */
+        height: 40px;
+        width: 80%;
+        text-align: center;
+        /* padding-top: 140px; */
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    #r4c1b3 {
+        /* background-color: red; */
+        height: 40px;
+        width: 80%;
+        text-align: center;
+        /* padding-top: 140px; */
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    #r4c1b4 {
+        background-color: #F7CA18;
+        height: 100px;
+        width: 80%;
+        text-align: left;
+        /* padding-top: 140px; */
+        margin-bottom: 10px;
+        margin-left: 10%;
+        color: #ffffff
+    }
+
+    #r4c1b5 {
+        /* background-color: ; */
+        height: 40px;
+        width: 80%;
+        text-align: center;
+        /* padding-top: 140px; */
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    /* #r5 {
+        background-color: rgb(22, 22, 22);
+        height: 500px;
+        width: 70%;
+        /* text-align: center; */
+    /* padding-top: 30px; */
+    /* margin-bottom: 10px; */
+    /* margin-left: 28%; */
+    /* padding-left: 35px; */
+    /* color: white; */
+    /* border-radius: 5%; */
+    /* text-align: center; */
+    /* margin-top: 200px; */
+    /* }  */
+
+    #r4 {
+        height: 600px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #r51 {
+        background-color: #ffffff;
+        width: 28%;
+        margin-right: 2%;
+        text-align: center;
+    }
+
+    #r52 {
+        width: 28%;
+        margin-right: 2%;
+        text-align: center;
+        background-color: #F7CA18;
+    }
+
+
+
+    #r5 div {
+        background-color: rgb(22, 22, 22);
+        color: rgb(255, 255, 255);
+        float: left;
+        font-family: sans-serif;
+        text-align: left;
+        height: 300px;
+        padding-top: 10px;
+        padding-left: 3%;
+        border-radius: 2%;
+
+    }
+
+    #logo {
+        /* text-align: left; */
+        font-family: sans-serif;
+        font: bolder;
+        height: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        padding-left: 60px;
+        size: 25px;
+        /* margin-top: 35px; */
+
+    }
+
+    #purlink1 {
+        /* align-items: center; */
+        width: 100%;
+        /* background-color: #000000; */
+        /* color: #F7CA18; */
+        border-radius: 2%;
+        padding-bottom: 2%;
+    }
+
+    .btn1 {
+        width: 98%;
+        height: 50px;
+        background-color: #222222;
+        color: #ffffff;
+        border: #474747;
+        border-radius: 5%;
+    }
+    #purlink2 {
+        /* align-items: center; */
+        width: 100%;
+        /* background-color: #000000; */
+        /* color: #F7CA18; */
+        border-radius: 2%;
+    }
+
+    .btn2 {
+        width: 98%;
+        height: 50px;
+        background-color: #ffffff;
+        color: #000000;
+        border: #474747;
+        border-width: 5%;
+        border-radius: 5%;
+    }
+</style>
+
+<body bgcolor="black">
+    
+    <div id="r1">
+        <div id="logo">
+            <h1> LEVEL UP</h1>
+        </div>
+    </div>
+    <div id="r4">
+        <div id="r4c1">
+            <div id="r4c1b1">
+                <img src="logos\pngegg.png" height="120px" width="78%">
+                <!-- <h4>PURCHASE</h4> -->
+                <div id="r4c1b2">
+                    <div id="purlink1">
+
+                        <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                            <button type="submit" class="btn1">PURCHASE</button></a>
+                    </div>
+                </div>
+                <div id="r4c1b2">
+                    <div id="purlink2">
+
+                        <a href="#">
+                            <button type="submit" class="btn2">ADD TO CART</button></a>
+                    </div>
+                </div>
+                <div id="r4c1b3"></div>
+                <div id="r4c1b4">
+                    Developer -
+Gearbox Software<br>
+Publisher -
+2K<br>
+Release Date -
+09/13/19<br>
+
+                </div>
+                <!-- <div id="r4c1b5"></div> -->
+
+
+
+            </div>
+
+        </div>
+        <div id="side">
+            side
+        </div>
+        <div id="r4c2">
+            <!-- <img src="borderland 1.png"> -->
+            <video width="100%" height="550" autoplay>
+                <source src="logos\Borderlands 3 - Official Cinematic Launch Trailer.mp4" type="video/mp4">
+                <source src="logos\Borderlands 3 - Official Cinematic Launch Trailer.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div id="r3">
+        <h2>BORDERLANDS 3</h2>
+        <h4>
+
+            The original shooter-looter returns, packing bazillions of guns and an all-new mayhem-fueled adventure!
+            Blast through new worlds and enemies as one of four brand new Vault Hunters – the ultimate
+            treasure-seeking
+            badasses of the Borderlands, each with deep skill trees, abilities and customization. Play solo or join
+            with
+            friends to take on insane enemies, score loads of loot and save your home from the most ruthless cult
+            leaders in the galaxy.
+            <h3> A MAYHEM-FUELED THRILL RIDE</h3>
+            <h4> Stop the fanatical Calypso Twins from uniting the bandit clans and claiming the galaxy’s ultimate
+                power.
+            </h4>
+            <h3> YOUR VAULT HUNTER, YOUR PLAYSTYLE</h3>
+            <h4> Become one of four extraordinary Vault Hunters, each with unique abilities, playstyles, deep skill
+                trees,
+                and tons of personalization options. All Vault Hunters are capable of awesome mayhem alone, but
+                together
+                they are unstoppable. </h4>
+            <br>
+            <h4> • Moze as THE GUNNER: When Moze needs backup she Digistructs her mech – Iron Bear – for a sucker
+                punch
+                of
+                additional firepower. </h4>
+            <br>
+            <h4> • Amara as THE SIREN: A confident, capable brawler with the ability to summon ethereal fists, Amara
+                uses her
+                Siren powers to smash her enemies. </h4>
+            <br>
+            <h4> • FL4K as the BEASTMASTER: FL4K lives for the hunt. So do the loyal beasts that follow their
+                master’s
+                every
+                command. Their preferred prey? Unsuspecting bandits, those poor suckers. </h4>
+            <bfr>
+                <h4> • Zane as the OPERATIVE: Specializing in battlefield gadgetry, Zane is extremely proficient at
+                    slipping into
+                    combat, creating chaos, and sneaking back out as if he were never there. </h4>
+                <h3> LOCK, LOAD, AND LOOT</h3>
+                <h4> With bazillions of guns and gadgets, every fight is an opportunity to score new gear. Firearms
+                    with
+                    self-propelling bullet shields? Check. Rifles that spawn fire-spewing volcanoes? Obviously. Guns
+                    that grow
+                    legs and chase down enemies while hurling verbal insults? Yeah, got that too. </h4>
+                <h3>NEW BORDERLANDS</h3>
+                <h4> Discover new worlds beyond Pandora, each featuring unique environments to explore and enemies
+                    to
+                    destroy.
+                    Tear through hostile deserts, battle your way across war-torn cityscapes, navigate deadly bayous
+                    and
+                    more! </h4>
+
+        </h4>
+    </div>
+    <div id="r5">
+        <div id="r51">
+            <h3>
+                MINIMUM
+            </h3>
+
+            OS<br>
+
+            Windows 7/10 (latest service pack)
+            <br>
+            Processor
+            <br>
+            AMD FX-8350 (Intel i5-3570)
+            <br>
+            RAM
+            <br>
+            6GB
+            <br>
+            Graphics Card
+            <br>
+            AMD Radeon™ HD 7970 (NVIDIA GeForce GTX 680 2GB)
+            <br>
+            HDD
+            <br>
+            75 GB
+        </div>
+        <div id="r52">
+
+            <h3>
+                RECOMMENDED
+            </h3>
+
+            OS<br>
+
+            Windows 7/10 (latest service pack)
+            <br>
+            Processor
+            <br>
+            AMD Ryzen™ 5 2600 (Intel i7-4770)
+            <br>
+            RAM
+            <br>
+            16GB
+            <br>
+            Graphics Card
+            <br>
+            AMD Radeon™ HD 7970 (NVIDIA GeForce GTX 680 2GB)
+            <br>
+            HDD
+            <br>
+            75 GB
+        </div>
+    
+</body>
+
+</html>

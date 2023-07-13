@@ -1,0 +1,751 @@
+<html>
+
+<head>
+    <!-- <meta name="viewpoiny" content="width=device-width,  -->
+    <title>
+        Level Up
+    </title>
+    <style type="text/css">
+        * {
+            font-family:monospace;
+        }
+
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #F7CA18;
+
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            /* padding-bottom: 5%; */
+            text-decoration: none;
+            font-size: 17px;
+            color: #303030;
+            display: block;
+            padding-top: 30px;
+        }
+
+        .sidenav a:hover {
+            color: #ffffff;
+        }
+
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            height: 125px;
+            margin-top: 80px;
+            padding: 0px;
+            background-size: cover;
+            /* font-family: sans-serif; */
+        }
+
+        #header {
+            background-color: #474747;
+            position: fixed;
+
+
+            left: 120px;
+            right: 0;
+            top: 0px;
+            bottom: 10px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            /* box-shadow: 0 0 25px 0 rgb(102, 102, 102); */
+        }
+
+        #header * {
+            display: inline;
+        }
+
+        #header li {
+            margin: 30px;
+        }
+
+        #header li a {
+            color: #818181;
+            text-decoration: none;
+        }
+
+        #header li a:hover {
+            color: #f1f1f1;
+        }
+
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+            margin-right: 25px;
+
+        }
+
+        .searchterm {
+            width: 50%;
+            border: 3px solid #6b6b6b;
+            border-right: none;
+            padding: 5px;
+            padding-top: 11px;
+            height: 20px;
+            border-radius: 5px 5px 5px 5px;
+            outline: none;
+            color: #9dbfaf;
+
+        }
+
+        .searchterm:focus {
+            color: #606060;
+        }
+
+        .searchbutton {
+            width: 30px;
+            height: 20px;
+            /* padding-top: %; */
+            border: 1px solid#ffffff;
+            background: #727272;
+            text-align: center;
+            color: #fff;
+            padding-bottom: 2px;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .wrap {
+            width: 30%;
+            position: absolute;
+            top: 40%;
+            left: 70%;
+            transform: translate(-50%, -505);
+        }
+
+
+
+
+
+        #news {
+            height: 200%;
+            width: 120%;
+            /* padding-top: px; */
+            /* padding-right: 10%; */
+            margin-top: -200px;
+            /* margin-left: 200px;    */
+
+        }
+
+        #games {
+            background-color: rgb(0, 0, 0);
+            height: 230px;
+            width: 60%;
+            text-align: center;
+            padding-top: 50px;
+            padding-left: 2%;
+            padding-right: 5%;
+            margin-bottom: 10px;
+            margin-left: 250px;
+
+        }
+
+        #block {
+            background-color: rgb(255, 255, 255);
+            height: 250px;
+            width: 60%;
+            /* text-align: center;
+            padding-top: 50px;
+            padding-left: 2%;
+            padding-right: 5%;
+            margin-bottom: 10px;
+            margin-left: 250px; */
+
+        }
+
+        .logo {
+            text-decoration: none;
+            color: aliceblue;
+            padding-left: 60px;
+            size: 25px;
+        }
+
+        #r4 {
+            background-color: #000000;
+            height: 300px;
+            width: 80%;
+            margin-left: 15%;
+            margin-top: 2%;
+
+        }
+
+
+        #r4 {
+            background-color: #000000;
+            height: 300px;
+            width: 80%;
+            margin-left: 15%;
+            margin-top: 2%;
+
+        }
+
+        #row1 {
+            /* /* / background-image: url(borderland\ logo.png) ;  */
+
+            width: 22%;
+            margin-right: 1%;
+
+        }
+
+        #row2 {
+            /* background-image: url(gta\ v\ logo.png) ;  */
+            width: 22%;
+            margin-right: 1%;
+            /* padding: 25px; */
+        }
+
+        #row3 {
+            /* background-image: url(valorant\ logo.png) ;  */
+
+            width: 22%;
+            margin-right: 1%;
+            /* padding: 25px; */
+        }
+
+        #row4 {
+            width: 22%;
+            margin-right: 1%;
+        }
+
+        #r4 div {
+            display: inline;
+
+        }
+
+        .most-popular {
+            color: rgb(255, 255, 255);
+            margin-bottom: 1px;
+            font-size: 25px;
+            font-family: Arial, sans-serif;
+            padding-left: 220px;
+            padding-top: 50px;
+        }
+
+        .borderlands {
+            height: 300px;
+            width: 100%;
+            margin-left: 12%;
+            margin-top: 2%;
+        }
+
+        .borderlands {
+
+            /* overflow: hidden;*/
+            margin: 0 auto;
+        }
+
+        .borderlands img {
+            /* width: 100%; */
+            transition: 0.5s;
+        }
+
+        .borderlands:hover img {
+            transform: scale(1.1);
+        }
+
+
+        .gtav {
+            height: 300px;
+            width: 100%;
+            margin-left: 12%;
+            margin-top: 2%;
+        }
+
+        .gtav {
+
+            /* overflow: hidden;*/
+            margin: 0 auto;
+        }
+
+        .gtav img {
+            /* width: 100%; */
+            transition: 0.5s;
+        }
+
+        .gtav:hover img {
+            transform: scale(1.1);
+        }
+
+        .valorant {
+            height: 300px;
+            width: 100%;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+
+        .valorant {
+
+            /* overflow: hidden;*/
+            margin: 0 auto;
+        }
+
+        .valorant img {
+            /* width: 100%; */
+            transition: 0.5s;
+        }
+
+        .valorant:hover img {
+            transform: scale(1.1);
+        }
+
+        .among {
+            height: 300px;
+            width: 100%;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+
+        .among {
+
+            /* overflow: hidden;*/
+            margin: 0 auto;
+        }
+
+        .among img {
+            /* width: 100%; */
+            transition: 0.5s;
+        }
+
+        .among:hover img {
+            transform: scale(1.1);
+        }
+
+        .r5 {
+            background-color: #474747;
+            height: 150px;
+            width: 85%;
+            color: #aaaaaa;
+            text-align: center;
+            padding-top: 20px;
+            padding-left: 15%;
+            /* margin-bottom: 10px; */
+            margin-top: 2000px;
+        }
+
+
+
+
+        /* 0000000000000 */
+        /* Slideshow container */
+        .slideshow-container {
+            /* width: max-content; */
+            height: 350px;
+            width: 50%;
+            position:absolute;
+            /* margin: auto; */
+            padding-left: 6000px;
+            /* padding-top: -50%; */
+        }
+
+      /* Hide the images by default */
+      .mySlides img {
+            /* display: none; */
+            height: 600px;
+            width: 700px;
+            /* padding-bottom: 500px; */
+            /* margin-top: -100px; */
+        }
+       
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 75%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            opacity: 9%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            opacity: 0%;
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* 0000000000000 */
+    </style>
+</head>
+
+<body bgcolor="black">
+
+    <div id="header">
+        <div id="nav">
+            <div class="logo">
+                <h1>LEVEL UP</h1>
+            </div>
+            <ul>
+                <!-- <li><a href="most-popular"> Most Popular</a></li> -->
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact"> CONTACT </a></li>
+                <!-- <li><a href="#"> Terms of use </a></li> -->
+                <!-- <li><a href="#"> </a></li> -->
+
+
+            </ul>
+        </div>
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchterm" placeholder="search">
+                <button type="submit" class="searchbutton" <i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- <div id="news"> -->
+    <!-- <div id="pannel"> -->
+    <!-- <img src="banner2.png">   -->
+    <!-- </div> -->
+    <hr>
+
+
+
+    <!-- 0000000000000 -->
+
+    <!-- java -->
+   
+    <!-- -00000000000000 -->
+    </div>
+    <div id="games">
+        <div id="news">
+            <img src="logos\bannerps.png" height="150%" width="100%">
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="#most-popular">Most Popular</a> 
+        <a href="#newrelease">New Release</a>
+        <a href="#toppaid">Top Paid</a>
+        <a href="#topfree">Top Free</a>
+        <a href="#editor">Editor Choice</a>
+    </div>
+    <!-- <div class="main"></div> -->
+    <div class="most-popular" id="most-popular">
+        <h2>Most Popular</h2>
+    </div>
+    <div id="r4">
+        <div id="row1">
+            <div class="borderlands">
+                <a href="http://127.0.0.1:5500/HTML/borderland.html">
+                    <img src="logos\borderland logo.png" height="350px " alt="Geeks Image" />
+                </a>
+            </div>
+        </div>
+        <div id="row2">
+
+            <div class="gtav">
+                <a href="https://store.epicgames.com/en-US/p/grand-theft-auto-v">
+                    <img src="logos\gta v logo.png" height="350px" alt="Geeks Image" />
+                </a>
+            </div>
+        </div>
+        <div id="row3">
+            <div class="valorant">
+                <a href="https://store.epicgames.com/en-US/p/valorant">
+                    <img src="logos\valorant logo.png" height="350px" alt="Geeks Image" />
+                </a>
+            </div>
+        </div>
+        <div id="row4">
+            <div class="among">
+                <a href="https://store.epicgames.com/en-US/p/among-us">
+                    <img src="logos\amoung us.png" height="350px" alt="Geeks Image" />
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="most-popular" id="newrelease">
+            <h2>New Release</h2>
+        </div>
+        <div id="r3">
+
+            <div id="row1">
+                <div class="borderlands">
+                    <!-- <a href="https://store.epicgames.com/en-US/p/borderlands-3"> -->
+                    <img src="logos\GOD.png" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+            </div>
+            <div id="row2">
+
+                <div class="gtav">
+                    <!-- <a href="https://store.epicgames.com/en-US/p/grand-theft-auto-v"> -->
+                    <img src="logos\vampire.jpeg" height="250px" alt="Geeks Image" />
+                    </a>
+                </div>
+            </div>
+            <div id="row3">
+                <div class="valorant">
+                    <!-- <a href="https://store.epicgames.com/en-US/p/valorant"> -->
+                    <img src="logos\star.jpeg" height="250px" alt="Geeks Image" />
+                    </a>
+                </div>
+            </div>
+            <div id="row4">
+                <div class="among">
+                    <a href="https://store.epicgames.com/en-US/p/among-us">
+                        <img src="logos\wildcat.png" height="250px" alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\farming.png" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\pinball.png" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="most-popular" id="toppaid">
+                    <h2>Top Paid</h2>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\farcry.jpeg" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\wonder.jpeg" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\space.jpeg" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\ff.jpeg" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="logos\hot.jpeg" height="250px " alt="Geeks Image" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="borderlands">
+                <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                    <img src="logos\core.jpeg" height="250px " alt="Geeks Image" />
+                </a>
+            </div>
+        </div>
+        <div class="most-popular" id="topfree">
+            <h2>Top Free</h2>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\fortnite.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\atlast.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\rc.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\star.jpeg" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\neverwinter.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\atlast.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\hello.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\ww11.jpeg" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\3out1.jpeg" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\exil.jpeg" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\monkey.png" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="borderlands">
+            <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                <img src="logos\genshin.jpeg" height="250px " alt="Geeks Image" />
+            </a>
+        </div>
+        <div class="most-popular" id="editor">
+            <h2>Editor Choice</h2>
+        </div>
+        <div id="r4">
+            <div id="block">
+                <!-- <div id="row1">
+                <div class="borderlands">
+                    <a href="https://store.epicgames.com/en-US/p/borderlands-3">
+                        <img src="borderland logo.png" height="350px " alt="Geeks Image" />
+                    </a>
+                </div>
+            </div> -->
+                <div id="row2">
+
+                    <div class="gtav">
+                        <a href="https://store.epicgames.com/en-US/p/grand-theft-auto-v">
+                            <img src="logos\red.jpeg" height="350px" alt="Geeks Image" />
+                        </a>
+                    </div>
+                </div>
+                <div id="row3">
+                    <div class="valorant">
+                        <a href="https://store.epicgames.com/en-US/p/valorant">
+                            <img src="logos\aasassin.jpeg" height="350px" alt="Geeks Image" />
+                        </a>
+                    </div>
+                </div>
+                <div id="row4">
+                    <div class="among">
+                        <a href="https://store.epicgames.com/en-US/p/among-us">
+                            <img src="logos\sifu.jpeg" height="350px" alt="Geeks Image" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="r5" id="contact">
+        <!-- <h1> CONTACT</h1> -->
+        <h3>© 2022, Level Up, Inc. All rights reserved.<br>Level Up Games, the Level Up logo are trademarks or
+            registered trademarks of Level Up, Inc.<br> in the India and elsewhere. Other brands or product names are
+            the trademarks of their respective owners.</h3>
+    </div>
+
+</body>
+
+
+</html>
